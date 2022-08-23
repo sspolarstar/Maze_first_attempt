@@ -9,7 +9,8 @@
 #include "mazeBuilder.hpp" 
 #include "Global.hpp"
 
-
+//comment for git purposes
+// 
 //
 int main()
 {

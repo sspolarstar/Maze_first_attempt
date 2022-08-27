@@ -3,9 +3,9 @@
 #include <SFML/Graphics.hpp>
 #include <array>
 
-#include "Animation.h"
-#include "Collider.h"
-#include "Player.h"
+#include "Animation.hpp"
+#include "Collider.hpp"
+#include "Player.hpp"
 #include "mazeBuilder.hpp" 
 #include "Global.hpp"
 

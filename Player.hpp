@@ -1,7 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "Collider.h"
-#include "Animation.h"
+#include "Collider.hpp"
+#include "Animation.hpp"
 #include "Global.hpp"
 
 class Player

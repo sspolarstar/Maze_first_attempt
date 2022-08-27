@@ -4,7 +4,7 @@
 #include <string>
 
 #include "mazeBuilder.hpp"
-#include "Player.h"
+#include "Player.hpp"
 
 
 void DrawMap(sf::RenderWindow& window, const std::array<std::array< Cell, MAP_HEIGHT>, MAP_WIDTH> MapSketch);

@@ -4,7 +4,7 @@
 #include <array>
 
 #include "Animation.hpp"
-#include "Collider.hpp"
+#include "MapCollider.hpp"
 #include "Player.hpp"
 #include "mazeBuilder.hpp" 
 #include "Global.hpp"

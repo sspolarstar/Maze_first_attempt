@@ -1,6 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "Collider.hpp"
+#include "MapCollider.hpp"
 #include "Animation.hpp"
 #include "Global.hpp"
 

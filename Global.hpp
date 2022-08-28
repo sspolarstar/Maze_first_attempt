@@ -16,7 +16,8 @@ enum class Cell
 	Empty,
 	Chest,
 	NPC,
-	Boulder
+	Boulder,
+	Next_Area
 
 };
 

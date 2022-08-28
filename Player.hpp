@@ -6,6 +6,8 @@
 
 class Player
 {
+private:
+	Position position;
 public:
 	Player(sf::Texture* texture, sf::Vector2u imageCount, float switchTime, float speed);
 	~Player();
@@ -16,8 +18,7 @@ public:
 	sf::Vector2f getPosition() { return body.getPosition(); }
 	void setPosition(sf::Vector2f position) { body.setPosition(position); }
 
-	Collider getCollider() { return Collider(body); }
-private:
+	//Collider getCollider() { return Collider(body); }
 	sf::RectangleShape body;
 	Animation animation;
 	unsigned int row;

@@ -43,7 +43,7 @@ std::array<std::array<Cell, MAP_HEIGHT>, MAP_WIDTH> convertSketch(const std::arr
 					break;
 			
 				case 'p': 
-					player.setPosition(sf::Vector2f((float)b*CELL_SIZE, (float)a*CELL_SIZE));
+					player.setPosition(b*CELL_SIZE, a*CELL_SIZE);
 					break;
 			
 				case 'c': 

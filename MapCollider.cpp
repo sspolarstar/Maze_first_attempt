@@ -1,6 +1,6 @@
 #include "MapCollider.hpp"
 
-bool map_collision(short i_x, short i_y, std::array<std::array<Cell, MAP_HEIGHT>, MAP_WIDTH> & mapRef)
+bool map_collision(short i_x, short i_y, const std::array<std::array<Cell, MAP_HEIGHT>, MAP_WIDTH>& mapRef)
 {
 	bool output = false;
 

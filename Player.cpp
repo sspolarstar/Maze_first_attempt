@@ -20,8 +20,12 @@ Player::~Player()
 	//do nothing
 }
 
-void Player::Update(float deltaTime)
+void Player::Update(float deltaTime, std::array<std::array< Cell, MAP_HEIGHT>, MAP_WIDTH>& mapRef)
 {
+	std::cout << "1";
+	if (map_collision(getPosition().x, getPosition().y, mapRef)) {
+		std::cout<<"collision detected"<<std::endl;
+	}
 
 	//Player animations
 	sf::Vector2u walkRight(0, 4);
@@ -30,7 +34,11 @@ void Player::Update(float deltaTime)
 	sf::Vector2u holdStill(6, 8);
 
 	//player movements
-	sf::Vector2f movement(0.0f, 0.0f);
+	//sf::Vector2f movement(0.0f, 0.0f);
+	Position movement;
+	movement.x = 0;
+	movement.y = 0;
+	
 	sf::Vector2u rowLocator;
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A))
 	{
@@ -69,11 +77,16 @@ void Player::Update(float deltaTime)
 
 	animation.Update(row, rowLocator, deltaTime, facesRight);
 	body.setTextureRect(animation.uvRect);
-	body.move(movement);
+	move(movement.x, movement.y);
 
 }
 
 void Player::Draw(sf::RenderWindow& window)
 {
 	window.draw(body);
+}
+
+void Player::move(short i_x, short i_y)
+{
+	setPosition(getPosition().x + i_x, getPosition().y + i_y);
 }

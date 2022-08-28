@@ -60,7 +60,7 @@ int main()
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) window.close();
         }
 
-        player.Update(deltaTime);
+        player.Update(deltaTime, map);
         window.clear();
         DrawMap(window, map);
         player.Draw(window);
